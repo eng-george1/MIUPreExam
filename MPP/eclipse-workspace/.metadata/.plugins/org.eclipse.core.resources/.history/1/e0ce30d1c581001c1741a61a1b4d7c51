@@ -1,0 +1,35 @@
+
+public class LinkeList {
+	Node head;
+
+	public class Node {
+		int data;
+		Node next;
+
+		Node(int d) {
+			data = d;
+			next = null;
+		}
+	}
+
+	void printList1(LinkeList.Node n) {
+		String nodes = "";
+		while (n != null) {
+			if (!nodes.equals(""))
+				nodes += ",";
+			nodes +=  Integer.toString(n.data);
+			n = n.next;
+		}
+		System.out.print(nodes);
+	}
+	void printList(LinkeList.Node n) {
+		StringBuilder nodes =new StringBuilder();
+		while (n != null) {
+			if (!nodes.equals(""))
+				nodes.append(",");
+			nodes.append(Integer.toString(n.data));
+			n = n.next;
+		}
+		System.out.print(nodes);
+	}
+}

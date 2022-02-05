@@ -1,0 +1,42 @@
+
+public class LinkedListI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.print("hello");
+		LinkeList list = new LinkeList();
+		list.head = list.new Node(1);
+		LinkeList.Node second = list.new Node(2);
+		LinkeList.Node third = list.new Node(3);
+		 
+		list.head.next = second;
+		second.next = third;
+		third.next = list.new Node(4);
+		System.out.println(list.printList(list.head));
+		//list.deleteNode(list.head,list.head,5);
+		list.deleteNodeIndex(4);
+		System.out.println(list.printList(list.head));
+		StringBuilder s = new StringBuilder();
+		s.append("hi");
+		
+		System.out.println(Integer.toString("geo".compareTo("Ahm")));
+		
+		
+		LinkeListS listS = new LinkeListS();
+		listS.head = listS.new Node("1");
+		LinkeListS.Node secondS = listS.new Node("2");
+		LinkeListS.Node thirdS = listS.new Node("3");
+		 
+		listS.head.next = secondS;
+		secondS.next = thirdS;
+		thirdS.next = listS.new Node("4");
+		System.out.println(list.printList(list.head));
+		//list.deleteNode(list.head,list.head,5);
+		System.out.println(listS.minValue());
+		
+//		System.out.print(s.equals("hi"));
+//		System.out.print(s.compareTo(new StringBuilder("hi22")));
+
+	}
+
+}

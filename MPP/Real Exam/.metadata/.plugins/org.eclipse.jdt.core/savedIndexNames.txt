@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\George\MIU\Exam\MPP\Real Exam\.metadata\.plugins\org.eclipse.jdt.core
+932615460.index
+1865797976.index
+760091825.index

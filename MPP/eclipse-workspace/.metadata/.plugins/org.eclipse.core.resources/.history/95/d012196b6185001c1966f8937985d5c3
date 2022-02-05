@@ -1,0 +1,7 @@
+
+public abstract class AbstractA {
+
+	abstract void help();
+	abstract int Add();
+	
+}
